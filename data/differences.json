@@ -1,0 +1,108 @@
+{
+	"items": [
+		{
+			"topic": "Integration Management",
+			"points": [
+				"PRINCE2 integrates via governance artifacts (Business Case, stage plans, exceptions).",
+				"PMBOK7 integrates through principles/domains with strong tailoring over prescriptive steps.",
+				"ISO21500 provides a harmonized conceptual model without a specific method."
+			]
+		},
+		{
+			"topic": "Stakeholder Engagement",
+			"points": [
+				"PRINCE2 prescribes governance roles (Project Board, Executive, etc.) to drive engagement decisions.",
+				"PMBOK7 emphasizes systems thinking, servant leadership, and co-creation with stakeholders.",
+				"ISO21500 focuses on identifying needs/expectations with process-oriented communication guidance."
+			]
+		},
+		{
+			"topic": "Scope Management",
+			"points": [
+				"PRINCE2 uses product-based planning and Product Descriptions to define scope.",
+				"PMBOK7 centers on outcomes/value with scope emerging across domains and tailoring.",
+				"ISO21500 references WBS-based structuring and baseline alignment at a conceptual level."
+			]
+		},
+		{
+			"topic": "Schedule Management",
+			"points": [
+				"PRINCE2 plans by stages with tolerances; escalation via management by exception.",
+				"PMBOK7 encourages adaptive cadences and pulling work to optimize flow.",
+				"ISO21500 frames activity sequencing/estimation/control in a standards-aligned baseline context."
+			]
+		},
+		{
+			"topic": "Cost Management",
+			"points": [
+				"PRINCE2 ties costs to Business Case and uses tolerances/exceptions to escalate.",
+				"PMBOK7 blends cost with value measurement and forecasting flexibility.",
+				"ISO21500 provides high-level cost control notions without tool prescription."
+			]
+		},
+		{
+			"topic": "Quality Management",
+			"points": [
+				"PRINCE2 uses Quality Register and formal product reviews.",
+				"PMBOK7 embeds quality in principles and continuous improvement.",
+				"ISO21500 remains conceptual with planning/control expectations."
+			]
+		},
+		{
+			"topic": "Resource Management",
+			"points": [
+				"PRINCE2 emphasizes role clarity and governance-driven resource decisions.",
+				"PMBOK7 focuses on team performance and leadership environment.",
+				"ISO21500 references acquire/develop/manage at a high level."
+			]
+		},
+		{
+			"topic": "Communications Management",
+			"points": [
+				"PRINCE2 defines reporting/communication artifacts tied to stages.",
+				"PMBOK7 promotes transparency, collaboration, and frequent feedback.",
+				"ISO21500 outlines planning and distribution of information conceptually."
+			]
+		},
+		{
+			"topic": "Procurement Management",
+			"points": [
+				"PRINCE2 aligns suppliers via governance (Senior Supplier, commercial controls).",
+				"PMBOK7 discusses contract strategies and relationship management in domains.",
+				"ISO21500 describes procurement phases with neutral stance on method."
+			]
+		},
+		{
+			"topic": "Risk Management",
+			"points": [
+				"PRINCE2 defines a Risk theme with registers, roles, and management by exception.",
+				"PMBOK7 treats risk within principles/performance domains with strong tailoring and opportunity focus.",
+				"ISO21500 provides high-level process guidance aligned to governance without prescribing detailed method."
+			]
+		},
+		{
+			"topic": "Change Control",
+			"points": [
+				"PRINCE2 has formal Issue/Change Control and tolerance-based exceptions.",
+				"PMBOK7 embeds change in governance/tailoring with iterative delivery.",
+				"ISO21500 provides conceptual change/configuration control guidance."
+			]
+		},
+		{
+			"topic": "Governance and Roles",
+			"points": [
+				"PRINCE2 defines Project Board and delivery roles explicitly.",
+				"PMBOK7 promotes adaptable governance, leadership styles, and empowerment.",
+				"ISO21500 standardizes terminology and governance concepts."
+			]
+		},
+		{
+			"topic": "Benefits/Business Case Management",
+			"points": [
+				"PRINCE2 enforces continued justification/benefits tracking at stage gates.",
+				"PMBOK7 frames value realization and measurement across domains.",
+				"ISO21500 aligns benefits with strategy in a high-level manner."
+			]
+		}
+	]
+}

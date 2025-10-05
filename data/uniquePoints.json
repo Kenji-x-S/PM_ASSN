@@ -1,0 +1,225 @@
+{
+	"items": [
+		{
+			"topic": "Integration Management",
+			"unique": {
+				"PRINCE2": [
+					"Integration through explicit governance artifacts and stage boundaries.",
+					"Management by exception central to integrated control."
+				],
+				"PMBOK7": [
+					"Integration driven by principles/domains and tailoring across life cycles.",
+					"Holistic decision-making linking value, measurement, and flow."
+				],
+				"ISO21500": [
+					"Neutral, standard-aligned integration concepts for consistency.",
+					"Terminology foundation for cross-organization harmonization."
+				]
+			}
+		},
+		{
+			"topic": "Stakeholder Engagement",
+			"unique": {
+				"PRINCE2": [
+					"Project Board governance model drives engagement and decision rights.",
+					"Explicit role definitions (Executive, Senior User/Supplier)."
+				],
+				"PMBOK7": [
+					"Systems thinking and co-creation emphasis in engagement strategies.",
+					"Performance domains link engagement to value delivery."
+				],
+				"ISO21500": [
+					"Process-oriented view of communication and stakeholder needs/expectations.",
+					"Baseline reference usable across sectors and scales."
+				]
+			}
+		},
+		{
+			"topic": "Scope Management",
+			"unique": {
+				"PRINCE2": [
+					"Product-based planning with Product Descriptions and quality criteria.",
+					"Stage boundaries used to reassess scope and justification."
+				],
+				"PMBOK7": [
+					"Outcome/value-first framing; scope emerges through domains.",
+					"Tailoring over prescriptive process groups."
+				],
+				"ISO21500": [
+					"WBS-centric decomposition guidance in a neutral, high-level standard.",
+					"Consistency with broader ISO portfolio standards."
+				]
+			}
+		},
+		{
+			"topic": "Schedule Management",
+			"unique": {
+				"PRINCE2": [
+					"Management by stages and time tolerances with escalation.",
+					"Product-based planning informs activity sequencing."
+				],
+				"PMBOK7": [
+					"Supports adaptive cadences/iterative planning to optimize flow.",
+					"Focus on value delivery over rigid schedules when appropriate."
+				],
+				"ISO21500": [
+					"Conceptual scheduling guidance integrated with baseline control.",
+					"Compatible with various organizational governance models."
+				]
+			}
+		},
+		{
+			"topic": "Cost Management",
+			"unique": {
+				"PRINCE2": [
+					"Costs governed by Business Case with exception-based escalation.",
+					"Stage funding aligned to benefits and justification."
+				],
+				"PMBOK7": [
+					"Value/measurement domains drive flexible forecasting and decisions.",
+					"Less tool-prescriptive; more principle-guided."
+				],
+				"ISO21500": [
+					"Neutral guidance on estimating/budgeting/control baselines.",
+					"Terminology/consistency emphasis."
+				]
+			}
+		},
+		{
+			"topic": "Quality Management",
+			"unique": {
+				"PRINCE2": [
+					"Quality Register, Acceptance Criteria, and structured quality reviews.",
+					"Emphasis on product quality aligned to business justification."
+				],
+				"PMBOK7": [
+					"Quality embedded into flow/value with continuous improvement mindset.",
+					"Less prescriptive artifacts; more principle-based enablement."
+				],
+				"ISO21500": [
+					"High-level planning and control expectations without method prescription.",
+					"Terminology baseline for cross-org alignment."
+				]
+			}
+		},
+		{
+			"topic": "Resource Management",
+			"unique": {
+				"PRINCE2": [
+					"Role clarity through governance; controls via stage plans and tolerances.",
+					"Emphasis on responsibilities over functions."
+				],
+				"PMBOK7": [
+					"People/performance domain with leadership and environment focus.",
+					"Self-organization possible in adaptive contexts."
+				],
+				"ISO21500": [
+					"Acquire/develop/manage resources at concept level within governance.",
+					"Works across organizational contexts."
+				]
+			}
+		},
+		{
+			"topic": "Communications Management",
+			"unique": {
+				"PRINCE2": [
+					"Defined communication approach; management reports aligned to stages.",
+					"Controls integrate with exception/escalation mechanisms."
+				],
+				"PMBOK7": [
+					"Transparency, collaboration, and frequent feedback loops.",
+					"Tailored information radiators in adaptive delivery."
+				],
+				"ISO21500": [
+					"Conceptual planning and distribution guidance; neutral to tools.",
+					"Terminology/common expectations for communication."
+				]
+			}
+		},
+		{
+			"topic": "Procurement Management",
+			"unique": {
+				"PRINCE2": [
+					"Senior Supplier role and commercial controls support alignment.",
+					"Justification-driven supplier engagement."
+				],
+				"PMBOK7": [
+					"Contract strategy and relationship management within domains.",
+					"Tailoring of procurement to delivery model."
+				],
+				"ISO21500": [
+					"Procurement phases described at a high level.",
+					"Applicable across industries and org sizes."
+				]
+			}
+		},
+		{
+			"topic": "Risk Management",
+			"unique": {
+				"PRINCE2": [
+					"Formal Risk theme with risk owner/actionee and a maintained Risk Register.",
+					"Escalation via tolerances; management by exception for risk thresholds."
+				],
+				"PMBOK7": [
+					"Principle/domain framing highlights uncertainty and opportunity pursuit.",
+					"Strong tailoring guidance across predictive and adaptive contexts."
+				],
+				"ISO21500": [
+					"Standardized terminology and governance alignment for risk processes.",
+					"High-level guidance suitable for harmonization across organizations."
+				]
+			}
+		},
+		{
+			"topic": "Change Control",
+			"unique": {
+				"PRINCE2": [
+					"Formal Issue/Change Control with roles and tolerance triggers.",
+					"Configuration management integrated with governance."
+				],
+				"PMBOK7": [
+					"Governance/tailoring lead change; small batches and frequent feedback.",
+					"Fits both predictive and adaptive approaches."
+				],
+				"ISO21500": [
+					"Conceptual change and configuration control expectations.",
+					"Baseline-centric perspective."
+				]
+			}
+		},
+		{
+			"topic": "Governance and Roles",
+			"unique": {
+				"PRINCE2": [
+					"Project Board and role definitions central to control.",
+					"Management by exception clarifies decision rights."
+				],
+				"PMBOK7": [
+					"Adaptive governance and leadership models; empowerment and collaboration.",
+					"Value-focused decision-making."
+				],
+				"ISO21500": [
+					"Standardizes governance concepts and role clarity.",
+					"Useful for organizational consistency."
+				]
+			}
+		},
+		{
+			"topic": "Benefits/Business Case Management",
+			"unique": {
+				"PRINCE2": [
+					"Continued Business Justification at each stage boundary.",
+					"Benefits reviewed throughout lifecycle."
+				],
+				"PMBOK7": [
+					"Value realization and measurement domain shape benefits tracking.",
+					"Outcome-centric decisions across delivery approaches."
+				],
+				"ISO21500": [
+					"Strategic alignment and benefits concepts framed neutrally.",
+					"Supports harmonization with portfolio standards."
+				]
+			}
+		}
+	]
+}

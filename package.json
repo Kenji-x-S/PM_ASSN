@@ -1,0 +1,30 @@
+{
+  "name": "pm-asm1",
+  "version": "1.0.0",
+  "description": "Frontend-only Next.js + Tailwind CSS prototype to explore, compare, and extract insights from four project management standards: PMBOK 7, PRINCE2, ISO 21502, and ISO 21500.",
+  "main": "postcss.config.js",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^15.5.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.14",
+    "@types/node": "24.6.2",
+    "@types/react": "19.2.0",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.14",
+    "typescript": "5.9.3"
+  }
+}

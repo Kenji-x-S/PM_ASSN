@@ -1,0 +1,108 @@
+{
+	"items": [
+		{
+			"topic": "Integration Management",
+			"points": [
+				"Integration across planning, execution, and control is emphasized by all.",
+				"Alignment to objectives/benefits and governance is a common thread.",
+				"Tailoring integration to delivery approach and context is supported."
+			]
+		},
+		{
+			"topic": "Stakeholder Engagement",
+			"points": [
+				"All emphasize early identification of stakeholders and continuous engagement.",
+				"Clear roles, responsibilities, and communication channels are encouraged.",
+				"Expectations alignment and feedback loops are considered essential."
+			]
+		},
+		{
+			"topic": "Scope Management",
+			"points": [
+				"Defining deliverables/outcomes and acceptance criteria is common across the standards.",
+				"Progressive elaboration and change control are recognized practices.",
+				"Decomposition (e.g., work/products) is used to structure scope."
+			]
+		},
+		{
+			"topic": "Schedule Management",
+			"points": [
+				"Activity definition, sequencing, and estimation inform schedule creation.",
+				"Baselines and periodic control/updates are expected.",
+				"Tailoring of scheduling techniques to delivery approach is supported."
+			]
+		},
+		{
+			"topic": "Cost Management",
+			"points": [
+				"Cost estimation, budgeting, and control are foundational practices.",
+				"Baseline management and variance analysis are recognized.",
+				"Benefits/value alignment influences cost decisions."
+			]
+		},
+		{
+			"topic": "Quality Management",
+			"points": [
+				"Planning, assurance, and control activities are recommended for quality.",
+				"Quality criteria/requirements should be defined and verified.",
+				"Continuous improvement and lessons learned are encouraged."
+			]
+		},
+		{
+			"topic": "Resource Management",
+			"points": [
+				"Acquire, develop, and manage resources to meet project needs.",
+				"Team roles and competencies are recognized as critical.",
+				"Resource planning aligns with schedule and scope."
+			]
+		},
+		{
+			"topic": "Communications Management",
+			"points": [
+				"Plan and manage information distribution to stakeholders.",
+				"Transparency and timely reporting are emphasized.",
+				"Two-way feedback mechanisms are valued."
+			]
+		},
+		{
+			"topic": "Procurement Management",
+			"points": [
+				"Plan procurement, select suppliers, and administer contracts.",
+				"Contract type and relationship management impact outcomes.",
+				"Governance oversight for commercial decisions is present."
+			]
+		},
+		{
+			"topic": "Risk Management",
+			"points": [
+				"Each standard requires a structured approach to identifying, analyzing, and responding to risks.",
+				"Ongoing monitoring, ownership assignment, and communication of risks are recommended.",
+				"Both threats and opportunities are recognized as part of uncertainty management."
+			]
+		},
+		{
+			"topic": "Change Control",
+			"points": [
+				"Formal evaluation of changes against baselines is expected.",
+				"Impact analysis and authorization precede implementation.",
+				"Configuration control supports traceability."
+			]
+		},
+		{
+			"topic": "Governance and Roles",
+			"points": [
+				"Role clarity and decision rights are emphasized.",
+				"Escalation paths and oversight mechanisms exist.",
+				"Governance aligns projects to strategy and benefits."
+			]
+		},
+		{
+			"topic": "Benefits/Business Case Management",
+			"points": [
+				"Benefits and value realization are tracked across the lifecycle.",
+				"Business case/justification aligns to organizational strategy.",
+				"Measurement and learning inform ongoing decisions."
+			]
+		}
+	]
+}

@@ -1,0 +1,202 @@
+{
+	"topics": [
+		"Integration Management",
+		"Stakeholder Engagement",
+		"Scope Management",
+		"Schedule Management",
+		"Cost Management",
+		"Quality Management",
+		"Resource Management",
+		"Communications Management",
+		"Procurement Management",
+		"Risk Management",
+		"Change Control",
+		"Governance and Roles",
+		"Benefits/Business Case Management"
+	],
+	"standards": ["PRINCE2", "PMBOK7", "ISO21500"],
+	"comparisons": {
+		"Integration Management": {
+			"PRINCE2": {
+				"summary": "Integration via governance: Business Case, plans, stage boundaries, and management by exception coordinate work.",
+				"pdf": "/pdfs/PRINCE2.pdf"
+			},
+			"PMBOK7": {
+				"summary": "Integration is implicit across principles/domains: tailoring, value delivery, and holistic decision-making bind efforts.",
+				"pdf": "/pdfs/Project-Management-Institute-A-Guide-to-the-Project-Management-Body-of-Knowledge-PMBOK-R-Guide-PMBOK®️-Guide-Project-Management-Institute-2021.pdf"
+			},
+			"ISO21500": {
+				"summary": "Provides integrated, high-level guidance to harmonize objectives, governance, and baseline control.",
+				"pdf": "/pdfs/ISO 21500-2021_ Project, programme and portfolio management - Context and concepts.pdf"
+			}
+		},
+		"Stakeholder Engagement": {
+			"PRINCE2": {
+				"summary": "Defines roles/responsibilities via governance structure (Project Board, Executive, Senior User/Supplier).",
+				"pdf": "/pdfs/PRINCE2.pdf"
+			},
+			"PMBOK7": {
+				"summary": "Stakeholders central to value; emphasizes systems thinking, collaborative leadership, and tailoring of engagement.",
+				"pdf": "/pdfs/Project-Management-Institute-A-Guide-to-the-Project-Management-Body-of-Knowledge-PMBOK-R-Guide-PMBOK®️-Guide-Project-Management-Institute-2021.pdf"
+			},
+			"ISO21500": {
+				"summary": "Highlights stakeholder needs and expectations, with core processes for communication.",
+				"pdf": "/pdfs/ISO 21500-2021_ Project, programme and portfolio management - Context and concepts.pdf"
+			}
+		},
+		"Scope Management": {
+			"PRINCE2": {
+				"summary": "Product-based planning with product descriptions drives scope and acceptance criteria.",
+				"pdf": "/pdfs/PRINCE2.pdf"
+			},
+			"PMBOK7": {
+				"summary": "Outcome and value-focused; scope emerges through principles and delivery performance domains.",
+				"pdf": "/pdfs/Project-Management-Institute-A-Guide-to-the-Project-Management-Body-of-Knowledge-PMBOK-R-Guide-PMBOK®️-Guide-Project-Management-Institute-2021.pdf"
+			},
+			"ISO21500": {
+				"summary": "Introduces scope definition and WBS concepts to structure deliverables.",
+				"pdf": "/pdfs/ISO 21500-2021_ Project, programme and portfolio management - Context and concepts.pdf"
+			}
+		},
+		"Schedule Management": {
+			"PRINCE2": {
+				"summary": "Plans by stages; emphasizes tolerances and management by exception for time.",
+				"pdf": "/pdfs/PRINCE2.pdf"
+			},
+			"PMBOK7": {
+				"summary": "Focus on cadence, flow, and adaptive life cycles; schedules tailored to delivery approach.",
+				"pdf": "/pdfs/Project-Management-Institute-A-Guide-to-the-Project-Management-Body-of-Knowledge-PMBOK-R-Guide-PMBOK®️-Guide-Project-Management-Institute-2021.pdf"
+			},
+			"ISO21500": {
+				"summary": "Covers activity definition, sequencing, and control aligned with baseline.",
+				"pdf": "/pdfs/ISO 21500-2021_ Project, programme and portfolio management - Context and concepts.pdf"
+			}
+		},
+		"Cost Management": {
+			"PRINCE2": {
+				"summary": "Business Case and stage control tie funding to benefits; tolerances guide cost escalations.",
+				"pdf": "/pdfs/PRINCE2.pdf"
+			},
+			"PMBOK7": {
+				"summary": "Addresses cost estimation, budgeting, and flow-based forecasting under measurement/value focus.",
+				"pdf": "/pdfs/Project-Management-Institute-A-Guide-to-the-Project-Management-Body-of-Knowledge-PMBOK-R-Guide-PMBOK®️-Guide-Project-Management-Institute-2021.pdf"
+			},
+			"ISO21500": {
+				"summary": "High-level guidance on estimating, budgeting, and controlling costs within baselines.",
+				"pdf": "/pdfs/ISO 21500-2021_ Project, programme and portfolio management - Context and concepts.pdf"
+			}
+		},
+		"Quality Management": {
+			"PRINCE2": {
+				"summary": "Quality theme ensures products meet defined quality criteria via acceptance and quality registers.",
+				"pdf": "/pdfs/PRINCE2.pdf"
+			},
+			"PMBOK7": {
+				"summary": "Quality embedded in delivery principles; focuses on value, flow, and continuous improvement.",
+				"pdf": "/pdfs/Project-Management-Institute-A-Guide-to-the-Project-Management-Body-of-Knowledge-PMBOK-R-Guide-PMBOK®️-Guide-Project-Management-Institute-2021.pdf"
+			},
+			"ISO21500": {
+				"summary": "Foundational processes for quality planning and control coordinated with governance.",
+				"pdf": "/pdfs/ISO 21500-2021_ Project, programme and portfolio management - Context and concepts.pdf"
+			}
+		},
+		"Resource Management": {
+			"PRINCE2": {
+				"summary": "Roles defined at governance and delivery levels; resource use governed by stage plans and tolerances.",
+				"pdf": "/pdfs/PRINCE2.pdf"
+			},
+			"PMBOK7": {
+				"summary": "People domain focuses on team performance, leadership, and environment; resources tailored to approach.",
+				"pdf": "/pdfs/Project-Management-Institute-A-Guide-to-the-Project-Management-Body-of-Knowledge-PMBOK-R-Guide-PMBOK®️-Guide-Project-Management-Institute-2021.pdf"
+			},
+			"ISO21500": {
+				"summary": "Guides acquiring, developing, and managing resources aligned to governance.",
+				"pdf": "/pdfs/ISO 21500-2021_ Project, programme and portfolio management - Context and concepts.pdf"
+			}
+		},
+		"Communications Management": {
+			"PRINCE2": {
+				"summary": "Communication approach defined; reports and controls structured across stages and governance.",
+				"pdf": "/pdfs/PRINCE2.pdf"
+			},
+			"PMBOK7": {
+				"summary": "Communication supports collaboration, transparency, and frequent feedback across domains.",
+				"pdf": "/pdfs/Project-Management-Institute-A-Guide-to-the-Project-Management-Body-of-Knowledge-PMBOK-R-Guide-PMBOK®️-Guide-Project-Management-Institute-2021.pdf"
+			},
+			"ISO21500": {
+				"summary": "Defines communication planning and information distribution at a conceptual level.",
+				"pdf": "/pdfs/ISO 21500-2021_ Project, programme and portfolio management - Context and concepts.pdf"
+			}
+		},
+		"Procurement Management": {
+			"PRINCE2": {
+				"summary": "Senior Supplier role and commercial controls align procurement to business justification.",
+				"pdf": "/pdfs/PRINCE2.pdf"
+			},
+			"PMBOK7": {
+				"summary": "Addresses make/buy decisions, contracts, and relationship management within domains.",
+				"pdf": "/pdfs/Project-Management-Institute-A-Guide-to-the-Project-Management-Body-of-Knowledge-PMBOK-R-Guide-PMBOK®️-Guide-Project-Management-Institute-2021.pdf"
+			},
+			"ISO21500": {
+				"summary": "High-level procurement planning, sourcing, and contract administration guidance.",
+				"pdf": "/pdfs/ISO 21500-2021_ Project, programme and portfolio management - Context and concepts.pdf"
+			}
+		},
+		"Risk Management": {
+			"PRINCE2": {
+				"summary": "Focuses on continuous business justification, management by stages, and risk as a theme with defined risk management approach and registers.",
+				"pdf": "/pdfs/PRINCE2.pdf"
+			},
+			"PMBOK7": {
+				"summary": "Principle-based; views risk as a system property; emphasizes tailoring and value delivery with adaptive approaches.",
+				"pdf": "/pdfs/Project-Management-Institute-A-Guide-to-the-Project-Management-Body-of-Knowledge-PMBOK-R-Guide-PMBOK®️-Guide-Project-Management-Institute-2021.pdf"
+			},
+			"ISO21500": {
+				"summary": "Foundational guidance covering risk management processes integrated with project governance.",
+				"pdf": "/pdfs/ISO 21500-2021_ Project, programme and portfolio management - Context and concepts.pdf"
+			}
+		},
+		"Change Control": {
+			"PRINCE2": {
+				"summary": "Issue and Change Control procedures with defined roles; tolerance breaches trigger exceptions.",
+				"pdf": "/pdfs/PRINCE2.pdf"
+			},
+			"PMBOK7": {
+				"summary": "Change handled via governance and tailoring; emphasizes small-batch delivery and feedback.",
+				"pdf": "/pdfs/Project-Management-Institute-A-Guide-to-the-Project-Management-Body-of-Knowledge-PMBOK-R-Guide-PMBOK®️-Guide-Project-Management-Institute-2021.pdf"
+			},
+			"ISO21500": {
+				"summary": "Conceptual change control integrated with baseline and configuration management.",
+				"pdf": "/pdfs/ISO 21500-2021_ Project, programme and portfolio management - Context and concepts.pdf"
+			}
+		},
+		"Governance and Roles": {
+			"PRINCE2": {
+				"summary": "Project Board (Executive, Senior User, Senior Supplier) provides direction; roles are explicit.",
+				"pdf": "/pdfs/PRINCE2.pdf"
+			},
+			"PMBOK7": {
+				"summary": "Principles support adaptable governance; leadership styles and team empowerment highlighted.",
+				"pdf": "/pdfs/Project-Management-Institute-A-Guide-to-the-Project-Management-Body-of-Knowledge-PMBOK-R-Guide-PMBOK®️-Guide-Project-Management-Institute-2021.pdf"
+			},
+			"ISO21500": {
+				"summary": "Defines governance concepts and role clarity at a standard level for consistency.",
+				"pdf": "/pdfs/ISO 21500-2021_ Project, programme and portfolio management - Context and concepts.pdf"
+			}
+		},
+		"Benefits/Business Case Management": {
+			"PRINCE2": {
+				"summary": "Continued Business Justification through lifecycle; benefits tracked and reviewed at stage boundaries.",
+				"pdf": "/pdfs/PRINCE2.pdf"
+			},
+			"PMBOK7": {
+				"summary": "Value delivery focus ties outcomes to benefits; measurement domain informs benefits realization.",
+				"pdf": "/pdfs/Project-Management-Institute-A-Guide-to-the-Project-Management-Body-of-Knowledge-PMBOK-R-Guide-PMBOK®️-Guide-Project-Management-Institute-2021.pdf"
+			},
+			"ISO21500": {
+				"summary": "Aligns projects to strategic objectives; references benefits/value alignment within governance.",
+				"pdf": "/pdfs/ISO 21500-2021_ Project, programme and portfolio management - Context and concepts.pdf"
+			}
+		}
+	}
+}
