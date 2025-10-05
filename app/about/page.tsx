@@ -9,7 +9,7 @@ export default function AboutPage() {
 			</p>
             <div className="card p-5">
                 <h3 style={{ fontWeight: 700, color: "#e5e7eb" }}>Team</h3>
-                <p className="text-sm" style={{ marginTop: "0.25rem", color: "#cbd5e1" }}>Add group member names here.</p>
+                <p className="text-sm" style={{ marginTop: "0.25rem", color: "#cbd5e1" }}>BSCS23187 - Danish Dar <br/> BSCS23139 - Huzaifa Saleem <br/> BSCS23064 - Abdullah Asim</p>
 			</div>
             <div className="card p-5">
                 <h3 style={{ fontWeight: 700, color: "#e5e7eb" }}>Sources</h3>
