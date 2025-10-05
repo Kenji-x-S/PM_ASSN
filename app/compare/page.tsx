@@ -32,9 +32,9 @@ export default function ComparePage() {
         return starts.slice(0, 5);
     }, [topics, query]);
 
-	const current = useMemo(() => {
-		return data.comparisons[topic] as Record<string, { summary: string; pdf: string }>;
-	}, [topic]);
+    const current = useMemo(() => {
+        return (data.comparisons as any)[topic] as Record<string, { summary: string; pdf: string }>;
+      }, [topic]);      
 
 	const pages = TOPIC_PAGES[topic] || {};
 
