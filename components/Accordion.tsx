@@ -146,7 +146,7 @@ const AccordionItemComponent = memo(
             </section>
         );
     },
-    (prev, next) => prev.open === next.open && prev.item.id === next.item.id
+    (prev, next) => prev.open === next.open && prev.item === next.item
 );
 
 export default function Accordion({ items }: { items: AccordionItem[] }) {

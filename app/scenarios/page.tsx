@@ -59,9 +59,8 @@ const ScenarioCard = memo(
     (prev, next) => prev.isSelected === next.isSelected
 );
 
-// Separate accordion component - memoizes with deep comparison
-const AccordionSection = memo(
-    function AccordionSection({
+// Separate accordion component
+const AccordionSection = memo(function AccordionSection({
         current,
     }: {
         current: (typeof SCENARIO_LIST)[0];
@@ -176,7 +175,7 @@ const AccordionSection = memo(
 
         return <Accordion items={accordionItems} />;
     },
-    (prev, next) => prev.current.key === next.current.key
+    (prev, next) => prev.current.key === next.current.key && JSON.stringify(prev.current.data) === JSON.stringify(next.current.data)
 );
 
 export default function ScenariosPage() {
