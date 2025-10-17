@@ -15,6 +15,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* Reserve scrollbar space (removed per request) */
+
 :root {
 	--primary: #2563eb;
 	--primary-600: #2563eb;
@@ -30,8 +32,7 @@ body {
 
 /* Utilities */
 .container-base { max-width: 96rem; margin: 0 auto; padding-left: 1rem; padding-right: 1rem; }
-.card { background: rgba(17,24,39,0.7); backdrop-filter: blur(6px); border-radius: 0.9rem; box-shadow: 0 10px 30px rgba(0,0,0,0.25); border: 1px solid rgba(148,163,184,0.15); transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease; }
-.card:hover { transform: translateY(-6px) scale(1.02); box-shadow: 0 30px 60px rgba(0,0,0,0.45); border-color: rgba(147,197,253,0.35); }
+.card { background: rgba(17,24,39,0.7); backdrop-filter: blur(6px); border-radius: 0.9rem; box-shadow: 0 10px 30px rgba(0,0,0,0.25); border: 1px solid rgba(148,163,184,0.15); }
 .btn { display: inline-flex; align-items: center; justify-content: center; border-radius: 0.75rem; background: linear-gradient(135deg, #7c3aed, #3b82f6); color: #fff; padding: 0.7rem 1.1rem; font-weight: 700; letter-spacing: 0.2px; text-decoration: none; border: none; cursor: pointer; transition: transform 160ms ease, filter 160ms ease; }
 .btn:hover { transform: translateY(-3px); filter: brightness(1.08); }
 .link { color: var(--primary); text-decoration: none; font-weight: 500; }

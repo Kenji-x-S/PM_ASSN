@@ -29,7 +29,7 @@ export default function HomePage() {
 			<section className="grid grid-4">
                 <Link href="/library" className="card p-5" style={{ textDecoration: "none", color: "#e5e7eb" }}>
                     <h3 style={{ fontWeight: 700, color: "#e5e7eb" }}>Library</h3>
-                    <p className="text-sm" style={{ marginTop: "0.25rem", color: "#cbd5e1" }}>View and search the four standards. PDFs render in-browser.</p>
+                    <p className="text-sm" style={{ marginTop: "0.25rem", color: "#cbd5e1" }}>View and search the three standards. PDFs render in-browser.</p>
 				</Link>
                 <Link href="/compare" className="card p-5" style={{ textDecoration: "none", color: "#e5e7eb" }}>
                     <h3 style={{ fontWeight: 700, color: "#e5e7eb" }}>Compare</h3>
