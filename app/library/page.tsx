@@ -17,14 +17,13 @@ const SOURCES = [
 
 function LibraryContent() {
 	const [mounted, setMounted] = useState(false);
-	useEffect(() => {
-		setMounted(true);
-	}, []);
+	useEffect(() => setMounted(true), []);
 
 	const searchParams = useSearchParams();
 	const router = useRouter();
 	const fileParam = searchParams.get("file");
 	const pageParam = searchParams.get("page");
+
 	const [activeFile, setActiveFile] = useState<string | null>(fileParam);
 	const [page, setPage] = useState<number>(pageParam ? parseInt(pageParam, 10) : 1);
 	const [bookmarks, setBookmarks] = useState<Array<{ title: string; file: string; page?: number }>>([]);
@@ -51,8 +50,6 @@ function LibraryContent() {
 		} catch {}
 	}, [bookmarks]);
 
-	const filtered = SOURCES;
-
 	const activeSrc = useMemo(() => {
 		if (!activeFile) return null;
 		const pageHash = page && page > 0 ? `#page=${page}` : "";
@@ -72,33 +69,19 @@ function LibraryContent() {
 		<div className="space-y-6">
 			<h2 style={{ fontSize: "1.25rem", fontWeight: 700, color: "#e5e7eb" }}>Standards Library</h2>
 
-			<div
-				className="grid"
-				style={{ gridTemplateColumns: "220px 1fr", alignItems: "start" }}
-			>
-				{/* Left sidebar: Bookmarks */}
+			<div style={{ display: "flex", gap: "1.5rem", alignItems: "flex-start" }}>
+				{/* Sidebar */}
 				<aside
 					className="card p-4"
 					style={{
+						width: "220px",
 						position: "sticky",
 						top: "6rem",
 						maxHeight: "calc(100vh - 8rem)",
-						overflow: "auto",
-						marginLeft: "-0.25rem",
-						paddingLeft: "0.75rem",
+						overflowY: "auto",
 					}}
 				>
-					<h3
-						style={{
-							margin: 0,
-							fontSize: 14,
-							fontWeight: 800,
-							color: "#93c5fd",
-							letterSpacing: 0.3,
-						}}
-					>
-						Bookmarks
-					</h3>
+					<h3 style={{ margin: 0, fontSize: 14, fontWeight: 800, color: "#93c5fd" }}>Bookmarks</h3>
 					<ul style={{ listStyle: "none", padding: 0, marginTop: "0.75rem" }}>
 						{bookmarks.length === 0 ? (
 							<li className="text-sm text-muted">No bookmarks yet.</li>
@@ -106,7 +89,6 @@ function LibraryContent() {
 							bookmarks.map((b, i) => (
 								<li key={`${b.file}-${i}`} style={{ marginBottom: "0.5rem" }}>
 									<button
-										className="bookmark-item"
 										onClick={() => {
 											setActiveFile(b.file);
 											const p = b.page ?? 1;
@@ -122,46 +104,33 @@ function LibraryContent() {
 											border: "1px solid rgba(147,197,253,0.25)",
 											color: "#e5e7eb",
 											cursor: "pointer",
-											transition:
-												"transform 140ms ease, background 140ms ease, border-color 140ms ease",
-										}}
-										onMouseEnter={(e) => {
-											(e.currentTarget as HTMLButtonElement).style.background =
-												"rgba(2,6,23,0.8)";
-											(e.currentTarget as HTMLButtonElement).style.borderColor =
-												"rgba(147,197,253,0.45)";
-										}}
-										onMouseLeave={(e) => {
-											(e.currentTarget as HTMLButtonElement).style.background =
-												"rgba(2,6,23,0.6)";
-											(e.currentTarget as HTMLButtonElement).style.borderColor =
-												"rgba(147,197,253,0.25)";
 										}}
 									>
 										<span style={{ display: "block", fontWeight: 700 }}>{b.title}</span>
-										{b.page ? (
+										{b.page && (
 											<span className="text-sm" style={{ color: "#93c5fd" }}>
 												Page {b.page}
 											</span>
-										) : null}
+										)}
 									</button>
 								</li>
 							))
 						)}
 					</ul>
-					{bookmarks.length > 0 ? (
+					{bookmarks.length > 0 && (
 						<div className="mt-4">
 							<button className="btn" onClick={() => setBookmarks([])}>
 								Clear bookmarks
 							</button>
 						</div>
-					) : null}
+					)}
 				</aside>
 
-				{/* Right content: sources and big viewer */}
-				<section className="space-y-6">
+				{/* Main Content */}
+				<section style={{ flex: 1, display: "flex", flexDirection: "column", gap: "1.5rem" }}>
+					{/* Buttons */}
 					<div className="grid grid-4">
-						{filtered.map((s) => (
+						{SOURCES.map((s) => (
 							<button
 								key={s.title}
 								onClick={() => {
@@ -179,25 +148,23 @@ function LibraryContent() {
 									cursor: "pointer",
 								}}
 							>
-								<h3 style={{ fontWeight: 700, color: "#e5e7eb", margin: 0 }}>
-									{s.title}
-								</h3>
+								<h3 style={{ fontWeight: 700, color: "#e5e7eb", margin: 0 }}>{s.title}</h3>
 							</button>
 						))}
 					</div>
 
+					{/* Larger PDF Viewer */}
 					<div
 						className="card p-4"
-						style={{ height: "88vh", display: "flex", flexDirection: "column" }}
+						style={{
+							height: "90vh",
+							display: "flex",
+							flexDirection: "column",
+							width: "100%",
+							maxWidth: "100%",
+						}}
 					>
-						<div
-							style={{
-								display: "flex",
-								alignItems: "center",
-								gap: 8,
-								marginBottom: 12,
-							}}
-						>
+						<div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 12 }}>
 							<input
 								type="number"
 								min={1}
@@ -229,9 +196,30 @@ function LibraryContent() {
 								Bookmark page
 							</button>
 						</div>
-						<div style={{ flex: 1, minHeight: 0 }}>
+
+						{/* PDF Viewer now 50%+ width with no blue line */}
+						<div
+							style={{
+								flex: 1,
+								minHeight: 0,
+								display: "flex",
+								justifyContent: "center",
+								alignItems: "center",
+								background: "transparent",
+							}}
+						>
 							{activeSrc ? (
-								<PdfViewer src={activeSrc} title={`Viewing ${activeSrc}`} />
+								<div
+									style={{
+										width: "55vw",
+										height: "100%",
+										border: "none",
+										outline: "none",
+										boxShadow: "none",
+									}}
+								>
+									<PdfViewer src={activeSrc} title={`Viewing ${activeSrc}`} />
+								</div>
 							) : (
 								<p className="text-sm text-muted">Select a standard to view the PDF.</p>
 							)}
