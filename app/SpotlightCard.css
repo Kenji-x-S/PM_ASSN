@@ -1,0 +1,64 @@
+.card-spotlight {
+    position: relative;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background-color: #111827; /* same as your original dark blue/gray */
+    padding: 1.25rem;
+    overflow: hidden;
+    color: #e5e7eb;
+    width: 100%;
+    height: 220px; /* consistent fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* ✅ align text to top */
+    align-items: flex-start;
+    text-align: left;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 160ms ease, transform 160ms ease, border-color 160ms ease;
+    --mouse-x: 50%;
+    --mouse-y: 50%;
+    --spotlight-color: rgba(139, 92, 246, 0.35); /* your old purple hover glow */
+  }
+  
+  /* Spotlight animation */
+  .card-spotlight::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle at var(--mouse-x) var(--mouse-y),
+      var(--spotlight-color),
+      transparent 70%
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+  }
+  
+  .card-spotlight:hover::before,
+  .card-spotlight:focus-within::before {
+    opacity: 0.6;
+  }
+  
+  .card-spotlight:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 36px rgba(139, 92, 246, 0.35);
+  }
+  
+  /* ✅ Fix text positioning consistency */
+  .card-spotlight h3 {
+    margin: 0;
+    margin-top: 12px; /* exact pixel offset for title */
+    font-weight: 700;
+    color: #e5e7eb;
+    font-size: 1.125rem;
+  }
+  
+  .card-spotlight p {
+    margin: 0;
+    margin-top: 12px; /* consistent spacing from title */
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
