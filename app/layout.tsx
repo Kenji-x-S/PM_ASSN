@@ -11,6 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<html lang="en">
+			<link rel="icon" href="/favicon.ico" sizes="any" />
             <body style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
                 <Navbar />
                 <main className="container-base" style={{ paddingTop: "6rem", paddingBottom: "3rem", flex: 1 }}>{children}</main>
