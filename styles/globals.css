@@ -5,23 +5,22 @@ body {
     margin: 0;
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     background:
-                radial-gradient(1200px 800px at 10% 10%, rgba(99,102,241,0.25), transparent 60%),
-                radial-gradient(900px 700px at 90% 20%, rgba(168,85,247,0.18), transparent 60%),
-                radial-gradient(1000px 900px at 50% 100%, rgba(59,130,246,0.22), transparent 60%),
-                linear-gradient(135deg, #0b1220 0%, #0b1220 30%, #111827 60%, #0b1220 100%);
+        radial-gradient(1200px 800px at 10% 10%, rgba(99,102,241,0.25), transparent 60%),
+        radial-gradient(900px 700px at 90% 20%, rgba(168,85,247,0.18), transparent 60%),
+        radial-gradient(1000px 900px at 50% 100%, rgba(59,130,246,0.22), transparent 60%),
+        linear-gradient(135deg, #0b1220 0%, #0b1220 30%, #111827 60%, #0b1220 100%);
     background-attachment: fixed;
-    color: #e5e7eb; /* slate-200 */
+    color: #e5e7eb;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Reserve scrollbar space (removed per request) */
-
 :root {
-	--primary: #2563eb;
-	--primary-600: #2563eb;
-	--primary-700: #1d4ed8;
-	--muted: #475569;
+    --primary: #2563eb;
+    --primary-600: #2563eb;
+    --primary-700: #1d4ed8;
+    --muted: #475569;
+    --spotlight-color: rgba(139, 92, 246, 0.3);
 }
 
 /* Animations */
@@ -61,26 +60,24 @@ body {
 .header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; }
 .footer { border-top: 1px solid rgba(148,163,184,0.2); background: linear-gradient(180deg, rgba(17,24,39,0.6), rgba(17,24,39,0.3)); }
 .footer-inner { padding: 1.25rem; display: flex; align-items: center; justify-content: space-between; font-size: 0.875rem; color: #cbd5e1; }
-/* Fancy search dropdown animation */
+
+/* Fancy dropdown animation */
 .dropdown-enter { opacity: 0; transform: translateY(-4px); }
 .dropdown-enter-active { opacity: 1; transform: translateY(0); transition: opacity 150ms ease, transform 150ms ease; }
 .dropdown-exit { opacity: 1; transform: translateY(0); }
 .dropdown-exit-active { opacity: 0; transform: translateY(-4px); transition: opacity 120ms ease, transform 120ms ease; }
 
-/* Book hero animation */
+/* Book float */
 @keyframes bookFloat { 0% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-8px) rotate(2deg); } 100% { transform: translateY(0) rotate(-2deg); } }
 .book-float { animation: bookFloat 3.5s ease-in-out infinite; }
 .book-glow { filter: drop-shadow(0 8px 16px rgba(99,102,241,0.5)); }
-
-/* Subtle decorative book icon bullets (use with :before where needed) */
-.book-bullet:before { content: "📘"; margin-right: 0.5rem; }
 
 /* Forms */
 .input { width: 100%; border: 1px solid #93c5fd; background: rgba(2,6,23,0.75); color: #f8fafc; border-radius: 0.5rem; padding: 0.6rem 0.75rem; outline: none; transition: box-shadow 120ms ease, border-color 120ms ease; }
 .input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(37,99,235,0.35); }
 ::placeholder { color: #cbd5e1; opacity: 0.9; }
 
-/* Flipbook-style PDF container */
+/* Flipbook */
 .flipbook {
     position: relative;
     height: 100%;
@@ -108,22 +105,84 @@ body {
     background: radial-gradient(800px 120% at 0% 50%, rgba(0,0,0,0.25), transparent 40%),
                 radial-gradient(800px 120% at 100% 50%, rgba(0,0,0,0.25), transparent 40%);
 }
-.flipbook iframe {
-    background: #0b1220;
-}
+.flipbook iframe { background: #0b1220; }
+
 .select { border: 1px solid #cbd5e1; background: #fff; border-radius: 0.5rem; padding: 0.6rem 2rem 0.6rem 0.75rem; outline: none; transition: box-shadow 120ms ease, border-color 120ms ease; }
 .select:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(37,99,235,0.25); }
 
-/* Badges & pill */
 .badge { display:inline-block; padding: 0.25rem 0.5rem; border-radius: 999px; font-size: 0.75rem; background: rgba(37,99,235,0.25); color: #e0e7ff; font-weight: 700; }
-/* Search suggestion dropdown contrast */
+
+/* Dropdown contrast */
 .card.dropdown-enter-active { background: rgba(2,6,23,0.9); border-color: rgba(147,197,253,0.45); }
-/* Add this to your CSS file */
-.scenario-card {
-    transition: box-shadow 160ms ease, transform 160ms ease, border-color 160ms ease;
+
+/* ----------------------------- */
+/* Spotlight & Scenario Cards Fixes */
+/* ----------------------------- */
+
+/* Spotlight effect */
+.card-spotlight {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: rgba(2, 6, 23, 0.45);
 }
 
+.card-spotlight::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    var(--spotlight-color, rgba(139, 92, 246, 0.25)) 0%,
+    transparent 65%
+  );
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.card-spotlight:hover::before {
+  opacity: 1;
+}
+
+.card-spotlight > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Scenario grid and cards */
+.scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+  align-items: stretch;
+}
+
+.scenario-card {
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 1rem;
+  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  min-height: 170px;
+  background: rgba(2, 6, 23, 0.45);
+  width: 100%;
+}
+
+.scenario-card.selected {
+  border-color: rgba(139, 92, 246, 0.6);
+  background: rgba(139, 92, 246, 0.08);
+  box-shadow: 0 10px 28px rgba(139, 92, 246, 0.25);
+}
+
+.accordion-wrapper {
+  width: 100%;
+  align-self: stretch;
+  transition: none;
+}
+
+/* Hover elevation */
 .scenario-card:hover {
-    box-shadow: 0 12px 36px rgba(139, 92, 246, 0.35) !important;
-    transform: translateY(-2px);
+  box-shadow: 0 12px 36px rgba(139, 92, 246, 0.35) !important;
+  transform: translateY(-2px);
 }
